@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^SearchCompletion)(NSArray *results);
+
 @interface SearchService : NSObject
+
+- (void)startServiceWithSearchCharacters:(NSString *)characters withTargetLength:(NSInteger)targetLength withCompletion:(SearchCompletion)completion;
 
 @end

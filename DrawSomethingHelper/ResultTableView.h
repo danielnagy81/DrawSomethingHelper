@@ -10,4 +10,6 @@
 
 @interface ResultTableView : UITableViewController
 
+@property (nonatomic) NSArray *results;
+
 @end

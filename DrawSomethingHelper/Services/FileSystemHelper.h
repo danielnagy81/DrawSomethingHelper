@@ -12,5 +12,6 @@
 
 + (void)saveResults:(NSDictionary *)results;
 + (NSDictionary *)openResults;
++ (BOOL)isDatabaseExists;
 
 @end

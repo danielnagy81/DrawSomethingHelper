@@ -14,6 +14,15 @@
 		339976AC19C714C000A16794 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339976AB19C714C000A16794 /* Images.xcassets */; };
 		339976AF19C714C000A16794 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 339976AD19C714C000A16794 /* LaunchScreen.xib */; };
 		339976BB19C714C000A16794 /* DrawSomethingHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976BA19C714C000A16794 /* DrawSomethingHelperTests.m */; };
+		339976CB19C7154800A16794 /* BaseAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976C619C7154800A16794 /* BaseAlgorithm.m */; };
+		339976CC19C7154800A16794 /* SaveAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976C819C7154800A16794 /* SaveAlgorithm.m */; };
+		339976CD19C7154800A16794 /* SearchAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976CA19C7154800A16794 /* SearchAlgorithm.m */; };
+		339976D319C7154F00A16794 /* FileSystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976D019C7154F00A16794 /* FileSystemHelper.m */; };
+		339976D419C7154F00A16794 /* SearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976D219C7154F00A16794 /* SearchService.m */; };
+		339976D819C7155500A16794 /* SearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976D719C7155500A16794 /* SearchResult.m */; };
+		339976E019C720DA00A16794 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976DF19C720DA00A16794 /* Data.m */; };
+		339976E319C724D400A16794 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976E219C724D400A16794 /* Database.m */; };
+		339976E619C738D400A16794 /* ResultTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976E519C738D400A16794 /* ResultTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +49,24 @@
 		339976B419C714C000A16794 /* DrawSomethingHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawSomethingHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		339976B919C714C000A16794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		339976BA19C714C000A16794 /* DrawSomethingHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawSomethingHelperTests.m; sourceTree = "<group>"; };
+		339976C519C7154800A16794 /* BaseAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAlgorithm.h; sourceTree = "<group>"; };
+		339976C619C7154800A16794 /* BaseAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAlgorithm.m; sourceTree = "<group>"; };
+		339976C719C7154800A16794 /* SaveAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveAlgorithm.h; sourceTree = "<group>"; };
+		339976C819C7154800A16794 /* SaveAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveAlgorithm.m; sourceTree = "<group>"; };
+		339976C919C7154800A16794 /* SearchAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchAlgorithm.h; sourceTree = "<group>"; };
+		339976CA19C7154800A16794 /* SearchAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchAlgorithm.m; sourceTree = "<group>"; };
+		339976CF19C7154F00A16794 /* FileSystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystemHelper.h; sourceTree = "<group>"; };
+		339976D019C7154F00A16794 /* FileSystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSystemHelper.m; sourceTree = "<group>"; };
+		339976D119C7154F00A16794 /* SearchService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchService.h; sourceTree = "<group>"; };
+		339976D219C7154F00A16794 /* SearchService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchService.m; sourceTree = "<group>"; };
+		339976D619C7155500A16794 /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult.h; sourceTree = "<group>"; };
+		339976D719C7155500A16794 /* SearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResult.m; sourceTree = "<group>"; };
+		339976DE19C720DA00A16794 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Data.h; path = Data/Data.h; sourceTree = "<group>"; };
+		339976DF19C720DA00A16794 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Data.m; path = Data/Data.m; sourceTree = "<group>"; };
+		339976E119C724D400A16794 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		339976E219C724D400A16794 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		339976E419C738D400A16794 /* ResultTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultTableView.h; sourceTree = "<group>"; };
+		339976E519C738D400A16794 /* ResultTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +108,10 @@
 		3399769D19C714C000A16794 /* DrawSomethingHelper */ = {
 			isa = PBXGroup;
 			children = (
+				339976DD19C720CB00A16794 /* Data */,
+				339976D519C7155500A16794 /* Model */,
+				339976CE19C7154F00A16794 /* Services */,
+				339976C419C7154800A16794 /* Algorithm */,
 				339976A219C714C000A16794 /* AppDelegate.h */,
 				339976A319C714C000A16794 /* AppDelegate.m */,
 				339976A519C714C000A16794 /* ViewController.h */,
@@ -89,6 +120,8 @@
 				339976AB19C714C000A16794 /* Images.xcassets */,
 				339976AD19C714C000A16794 /* LaunchScreen.xib */,
 				3399769E19C714C000A16794 /* Supporting Files */,
+				339976E419C738D400A16794 /* ResultTableView.h */,
+				339976E519C738D400A16794 /* ResultTableView.m */,
 			);
 			path = DrawSomethingHelper;
 			sourceTree = "<group>";
@@ -117,6 +150,50 @@
 				339976B919C714C000A16794 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		339976C419C7154800A16794 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				339976C519C7154800A16794 /* BaseAlgorithm.h */,
+				339976C619C7154800A16794 /* BaseAlgorithm.m */,
+				339976C719C7154800A16794 /* SaveAlgorithm.h */,
+				339976C819C7154800A16794 /* SaveAlgorithm.m */,
+				339976C919C7154800A16794 /* SearchAlgorithm.h */,
+				339976CA19C7154800A16794 /* SearchAlgorithm.m */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		339976CE19C7154F00A16794 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				339976CF19C7154F00A16794 /* FileSystemHelper.h */,
+				339976D019C7154F00A16794 /* FileSystemHelper.m */,
+				339976D119C7154F00A16794 /* SearchService.h */,
+				339976D219C7154F00A16794 /* SearchService.m */,
+				339976E119C724D400A16794 /* Database.h */,
+				339976E219C724D400A16794 /* Database.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		339976D519C7155500A16794 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				339976D619C7155500A16794 /* SearchResult.h */,
+				339976D719C7155500A16794 /* SearchResult.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		339976DD19C720CB00A16794 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				339976DE19C720DA00A16794 /* Data.h */,
+				339976DF19C720DA00A16794 /* Data.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +296,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339976D819C7155500A16794 /* SearchResult.m in Sources */,
+				339976CB19C7154800A16794 /* BaseAlgorithm.m in Sources */,
+				339976E619C738D400A16794 /* ResultTableView.m in Sources */,
+				339976D419C7154F00A16794 /* SearchService.m in Sources */,
 				339976A719C714C000A16794 /* ViewController.m in Sources */,
+				339976CC19C7154800A16794 /* SaveAlgorithm.m in Sources */,
+				339976E019C720DA00A16794 /* Data.m in Sources */,
+				339976CD19C7154800A16794 /* SearchAlgorithm.m in Sources */,
 				339976A419C714C000A16794 /* AppDelegate.m in Sources */,
 				339976A119C714C000A16794 /* main.m in Sources */,
+				339976E319C724D400A16794 /* Database.m in Sources */,
+				339976D319C7154F00A16794 /* FileSystemHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DrawSomethingHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DrawSomethingHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

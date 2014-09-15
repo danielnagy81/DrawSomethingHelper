@@ -10,4 +10,6 @@
 
 @interface Database : NSObject
 
++ (void)createDatabase;
+
 @end

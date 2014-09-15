@@ -21,13 +21,18 @@ NSString *const FileType = @"plist";
 
 + (NSDictionary *)openResults {
     
-    BOOL isFileExists = [[NSFileManager defaultManager] fileExistsAtPath:[FileSystemHelper filePath]];
+    BOOL isFileExists = [FileSystemHelper isDatabaseExists];
     
     if (!isFileExists) {
         return nil;
     }
     NSDictionary *results = [NSDictionary dictionaryWithContentsOfFile:[FileSystemHelper filePath]];
     return results;
+}
+
++ (BOOL)isDatabaseExists {
+    
+    return [[NSFileManager defaultManager] fileExistsAtPath:[FileSystemHelper filePath]];
 }
 
 + (NSString *)filePath {
