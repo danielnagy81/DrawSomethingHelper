@@ -47,7 +47,7 @@
 - (void)startAlgorithm {
     
     for (NSInteger wordIndex = 0; wordIndex < _wordsToProcess.count; ++wordIndex) {
-        NSString *wordToProcess = [_wordsToProcess[wordIndex] lowercaseString];;
+        NSString *wordToProcess = _wordsToProcess[wordIndex];
         NSString *keyword =[self createKeyWithWord:wordToProcess];
         [self saveWord:wordToProcess toKey:keyword];
     }

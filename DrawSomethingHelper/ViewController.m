@@ -17,6 +17,7 @@ NSString *const ResultTableViewStoryboardIdentifier = @"ResultTableView";
     IBOutlet UITextField *_textField;
     __weak IBOutlet UITextField *_characterTextField;
     __weak IBOutlet UIStepper *_stepper;
+    __weak IBOutlet UIActivityIndicatorView *_loadingIndicator;
     
     SearchService *_searchService;
     NSArray *_results;
@@ -38,12 +39,32 @@ NSString *const ResultTableViewStoryboardIdentifier = @"ResultTableView";
 
 - (IBAction)searchButtonPressed:(id)sender {
     
+    [self changeViewInteractionIfLoading:YES];
     [_searchService startServiceWithSearchCharacters:_characterTextField.text withTargetLength:(NSInteger)_stepper.value withCompletion:^(NSArray *results) {
-        NSLog(@"Results: %@", results);
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        ResultTableView *resultsTableViewController = [storyboard instantiateViewControllerWithIdentifier:ResultTableViewStoryboardIdentifier];
-        resultsTableViewController.results = results;
-        [self.navigationController pushViewController:resultsTableViewController animated:YES];
+        [self instantiateSearchViewControllerWithResults:results];
+        [self changeViewInteractionIfLoading:NO];
     }];
+}
+
+- (void)changeViewInteractionIfLoading:(BOOL)loading {
+    
+    if (loading) {
+        [_loadingIndicator startAnimating];
+        _stepper.enabled = NO;
+        _characterTextField.enabled = NO;
+    }
+    else {
+        [_loadingIndicator stopAnimating];
+        _stepper.enabled = YES;
+        _characterTextField.enabled = YES;
+    }
+}
+
+- (void)instantiateSearchViewControllerWithResults:(NSArray *)results {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ResultTableView *resultsTableViewController = [storyboard instantiateViewControllerWithIdentifier:ResultTableViewStoryboardIdentifier];
+    resultsTableViewController.results = results;
+    [self.navigationController pushViewController:resultsTableViewController animated:YES];
 }
 @end

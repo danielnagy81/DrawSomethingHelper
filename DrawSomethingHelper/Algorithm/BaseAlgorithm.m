@@ -38,10 +38,11 @@
 
 - (NSArray *)createCharacterArrayFromWord:(NSString *)word {
     
-    NSMutableArray *characters = [[NSMutableArray alloc] initWithCapacity:word.length];
+    NSString *lowercaseWord = [word lowercaseString];
+    NSMutableArray *characters = [[NSMutableArray alloc] initWithCapacity:lowercaseWord.length];
     
-    for (NSInteger index = 0; index < word.length; ++index) {
-        unichar characterCode = [word characterAtIndex:index];
+    for (NSInteger index = 0; index < lowercaseWord.length; ++index) {
+        unichar characterCode = [lowercaseWord characterAtIndex:index];
         NSNumber *numberObjectOfCharacter = [NSNumber numberWithUnsignedShort:characterCode];
         [characters addObject:numberObjectOfCharacter];
     }
