@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Dani. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SearchParametersViewController.h"
 #import "SearchService.h"
 #import "ResultTableView.h"
 
 NSString *const ResultTableViewStoryboardIdentifier = @"ResultTableView";
 
-@interface ViewController () {
+@interface SearchParametersViewController () {
     
     IBOutlet UITextField *_textField;
     __weak IBOutlet UITextField *_characterTextField;
@@ -25,7 +25,7 @@ NSString *const ResultTableViewStoryboardIdentifier = @"ResultTableView";
 
 @end
 
-@implementation ViewController
+@implementation SearchParametersViewController
 
 - (void)viewDidLoad {
     

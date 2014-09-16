@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220FEF3619C8354800363D20 /* ResultTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FEF3319C8354800363D20 /* ResultTableView.m */; };
+		220FEF3719C8354800363D20 /* SearchParametersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FEF3519C8354800363D20 /* SearchParametersViewController.m */; };
 		339976A119C714C000A16794 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976A019C714C000A16794 /* main.m */; };
 		339976A419C714C000A16794 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976A319C714C000A16794 /* AppDelegate.m */; };
-		339976A719C714C000A16794 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976A619C714C000A16794 /* ViewController.m */; };
 		339976AA19C714C000A16794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339976A819C714C000A16794 /* Main.storyboard */; };
 		339976AC19C714C000A16794 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339976AB19C714C000A16794 /* Images.xcassets */; };
 		339976AF19C714C000A16794 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 339976AD19C714C000A16794 /* LaunchScreen.xib */; };
@@ -22,7 +23,6 @@
 		339976D819C7155500A16794 /* SearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976D719C7155500A16794 /* SearchResult.m */; };
 		339976E019C720DA00A16794 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976DF19C720DA00A16794 /* Data.m */; };
 		339976E319C724D400A16794 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976E219C724D400A16794 /* Database.m */; };
-		339976E619C738D400A16794 /* ResultTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 339976E519C738D400A16794 /* ResultTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220FEF3219C8354800363D20 /* ResultTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultTableView.h; path = ViewControllers/ResultTableView.h; sourceTree = "<group>"; };
+		220FEF3319C8354800363D20 /* ResultTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultTableView.m; path = ViewControllers/ResultTableView.m; sourceTree = "<group>"; };
+		220FEF3419C8354800363D20 /* SearchParametersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchParametersViewController.h; path = ViewControllers/SearchParametersViewController.h; sourceTree = "<group>"; };
+		220FEF3519C8354800363D20 /* SearchParametersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchParametersViewController.m; path = ViewControllers/SearchParametersViewController.m; sourceTree = "<group>"; };
 		3399769B19C714C000A16794 /* DrawSomethingHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawSomethingHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3399769F19C714C000A16794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		339976A019C714C000A16794 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		339976A219C714C000A16794 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		339976A319C714C000A16794 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		339976A519C714C000A16794 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		339976A619C714C000A16794 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		339976A919C714C000A16794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		339976AB19C714C000A16794 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		339976AE19C714C000A16794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -65,8 +67,6 @@
 		339976DF19C720DA00A16794 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Data.m; path = Data/Data.m; sourceTree = "<group>"; };
 		339976E119C724D400A16794 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
 		339976E219C724D400A16794 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
-		339976E419C738D400A16794 /* ResultTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultTableView.h; sourceTree = "<group>"; };
-		339976E519C738D400A16794 /* ResultTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +87,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220FEF3119C8351500363D20 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				220FEF3219C8354800363D20 /* ResultTableView.h */,
+				220FEF3319C8354800363D20 /* ResultTableView.m */,
+				220FEF3419C8354800363D20 /* SearchParametersViewController.h */,
+				220FEF3519C8354800363D20 /* SearchParametersViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		3399769219C714C000A16794 = {
 			isa = PBXGroup;
 			children = (
@@ -108,20 +119,17 @@
 		3399769D19C714C000A16794 /* DrawSomethingHelper */ = {
 			isa = PBXGroup;
 			children = (
+				220FEF3119C8351500363D20 /* ViewControllers */,
 				339976DD19C720CB00A16794 /* Data */,
 				339976D519C7155500A16794 /* Model */,
 				339976CE19C7154F00A16794 /* Services */,
 				339976C419C7154800A16794 /* Algorithm */,
 				339976A219C714C000A16794 /* AppDelegate.h */,
 				339976A319C714C000A16794 /* AppDelegate.m */,
-				339976A519C714C000A16794 /* ViewController.h */,
-				339976A619C714C000A16794 /* ViewController.m */,
 				339976A819C714C000A16794 /* Main.storyboard */,
 				339976AB19C714C000A16794 /* Images.xcassets */,
 				339976AD19C714C000A16794 /* LaunchScreen.xib */,
 				3399769E19C714C000A16794 /* Supporting Files */,
-				339976E419C738D400A16794 /* ResultTableView.h */,
-				339976E519C738D400A16794 /* ResultTableView.m */,
 			);
 			path = DrawSomethingHelper;
 			sourceTree = "<group>";
@@ -298,14 +306,14 @@
 			files = (
 				339976D819C7155500A16794 /* SearchResult.m in Sources */,
 				339976CB19C7154800A16794 /* BaseAlgorithm.m in Sources */,
-				339976E619C738D400A16794 /* ResultTableView.m in Sources */,
 				339976D419C7154F00A16794 /* SearchService.m in Sources */,
-				339976A719C714C000A16794 /* ViewController.m in Sources */,
 				339976CC19C7154800A16794 /* SaveAlgorithm.m in Sources */,
 				339976E019C720DA00A16794 /* Data.m in Sources */,
 				339976CD19C7154800A16794 /* SearchAlgorithm.m in Sources */,
+				220FEF3719C8354800363D20 /* SearchParametersViewController.m in Sources */,
 				339976A419C714C000A16794 /* AppDelegate.m in Sources */,
 				339976A119C714C000A16794 /* main.m in Sources */,
+				220FEF3619C8354800363D20 /* ResultTableView.m in Sources */,
 				339976E319C724D400A16794 /* Database.m in Sources */,
 				339976D319C7154F00A16794 /* FileSystemHelper.m in Sources */,
 			);
@@ -500,6 +508,7 @@
 				339976C019C714C000A16794 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		339976C119C714C000A16794 /* Build configuration list for PBXNativeTarget "DrawSomethingHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +517,7 @@
 				339976C319C714C000A16794 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
