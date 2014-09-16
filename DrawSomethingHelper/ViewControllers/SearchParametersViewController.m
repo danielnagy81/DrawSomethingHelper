@@ -29,6 +29,7 @@ NSString *const ResultTableViewStoryboardIdentifier = @"ResultTableView";
 
 - (void)viewDidLoad {
     
+    [super viewDidLoad];
     _searchService = [[SearchService alloc] init];
 }
 
